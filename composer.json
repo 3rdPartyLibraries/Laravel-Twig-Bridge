@@ -1,5 +1,5 @@
 {
-    "name": "ony/twig",
+    "name": "ony/twigbridge",
     "description": "Adds the power of Twig to Laravel",
     "keywords": ["laravel", "twig"],
     "license": "MIT",
