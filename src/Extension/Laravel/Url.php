@@ -57,6 +57,7 @@ class Url extends AbstractExtension
     {
         return [
             new TwigFunction('asset', [$this->url, 'asset'], ['is_safe' => ['html']]),
+            new TwigFunction('route', [$this->url, 'route'], ['is_safe' => ['html']]),
         ];
     }
 }
