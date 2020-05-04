@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "twig/twig": "~2.0",
+        "ony/twigbridge": "dev-master",
         "illuminate/support": "^5.5|^6|^7",
         "illuminate/view": "^5.5|^6|^7"
     },
