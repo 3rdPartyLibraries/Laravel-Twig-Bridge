@@ -18,6 +18,7 @@ use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
 use Twig\Error\Error;
 use Twig\Loader\LoaderInterface;
+use View;
 
 /**
  * Bridge functions between Laravel & Twig
@@ -158,7 +159,7 @@ class Bridge extends Environment
 
     public function make(ResponseInterface $response, $name, array $context = [])
     {
-        $response->getBody()->write($this->fetch($name, $context));
+        $response->getBody()->write(View::make($name, $context)->render());
 
         return $response;
     }
